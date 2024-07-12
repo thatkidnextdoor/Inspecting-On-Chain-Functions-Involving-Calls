@@ -11,7 +11,9 @@
 
 **Function Name:** getLendingPool  
 **Block Explorer Link:** [Aave LendingPoolAddressesProvider on Etherscan](https://etherscan.io/address/0xb53c1a33016b2dc2ff3653530bff1848a515c8c5#code)
+
 **Function code:**
+
 ```solidity
 function getLendingPool() public view returns (address) {
     return getAddress(AaveData.LENDING_POOL);
@@ -30,7 +32,7 @@ function _getAaveDataSlot(AaveData aaveData) internal pure returns (bytes32) {
     return keccak256(abi.encode(aaveData));
 }
 ```
-# Used Encoding/Decoding or Call Method: `abi.encode`
+ **Used Encoding/Decoding or Call Method:** `abi.encode`
 
 ## Explanation
 Purpose: The `getLendingPool` function retrieves the address of the Aave lending pool from the Aave LendingPoolAddressesProvider contract.
